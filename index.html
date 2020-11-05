@@ -8,17 +8,21 @@
   </head>
   <body style="text-align: center">
     <canvas id="unity-canvas" style="width: 100%; height: 100%; background: #231F20"></canvas>
-    <script src="Build/GameDemo.loader.js"></script>
+    <div id="loadingNotifier" style="position: absolute; color: #FFFFFF;">
+      <img src="ghostloaf.gif" />
+    </div>
+    <script src="demo-chapter/Build/demo-chapter.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/GameDemo.data",
-        frameworkUrl: "Build/GameDemo.framework.js",
-        codeUrl: "Build/GameDemo.wasm",
+        dataUrl: "demo-chapter/Build/demo-chapter.data",
+        frameworkUrl: "demo-chapter/Build/demo-chapter.framework.js",
+        codeUrl: "demo-chapter/Build/demo-chapter.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Radmagnificorp",
         productName: "SBGF Demo",
         productVersion: "0.1",
       });
     </script>
+    <script src="radmagPlayer.js"></script>
   </body>
 </html>
