@@ -3,5 +3,10 @@
   "name": "Game Demo",
   "start_url": "index.html?launcher=true",
   "display": "fullscreen",
-  "orientation": "landscape"
+  "orientation": "landscape",
+  "icons": [
+    {
+      "src": "glicon.png"
+    }
+  ]
 }
